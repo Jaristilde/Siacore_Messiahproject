@@ -17,7 +17,7 @@ const Shop = () => {
         : products.filter(p => p.category === activeCategory);
 
     return (
-        <div className= "min-h-screen pt-32 pb-20 px-6 max-w-7xl mx-auto" >
+        <div className= "min-h-screen pt-32 pb-20 px-6 max-w-7xl mx-auto bg-black text-white" >
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12" >
             <div>
             <h1 className="text-4xl font-display font-bold mb-4 uppercase tracking-tighter" >
@@ -30,8 +30,8 @@ const Shop = () => {
                 key= { cat }
                 onClick = {() => setActiveCategory(cat)}
 className = {`px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest transition-all ${activeCategory === cat
-        ? 'bg-primary text-white shadow-lg shadow-pink-200'
-        : 'bg-white border border-pink-100 text-gray-500 hover:border-primary hover:text-primary'
+        ? 'bg-primary text-white shadow-lg shadow-pink-500/20'
+        : 'bg-white/5 border border-white/10 text-gray-400 hover:border-primary hover:text-primary'
     }`}
               >
     { cat }
@@ -40,7 +40,7 @@ className = {`px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest
 </div>
     </div>
 
-    < div className = "flex items-center gap-4 text-xs font-bold uppercase tracking-widest text-gray-400 border-b border-pink-100 pb-2 cursor-pointer hover:text-primary transition-colors" >
+    < div className = "flex items-center gap-4 text-xs font-bold uppercase tracking-widest text-gray-500 border-b border-white/10 pb-2 cursor-pointer hover:text-primary transition-colors" >
         <SlidersHorizontal className="w-4 h-4" />
             Filter & Sort
             </div>
@@ -57,7 +57,7 @@ className = {`px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest
 {
     filteredProducts.length === 0 && (
         <div className="text-center py-20" >
-            <p className="text-gray-400 font-display" > No items found in this category: (</p>
+            <p className="text-gray-500 font-display italic" > No items found in this category: (</p>
                 </div>
             )
 }

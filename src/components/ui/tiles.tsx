@@ -44,7 +44,7 @@ export function Tiles({
     className = {
         cn(
             tileSizes[tileSize],
-            "border-l dark:border-neutral-900 border-neutral-100 relative",
+            "border-l border-neutral-900 border-neutral-900/50 relative",
             tileClassName
         )
     }
@@ -64,11 +64,12 @@ key = {`col-${j}`}
 className = {
     cn(
         tileSizes[tileSize],
-                "border-r border-t dark:border-neutral-900 border-neutral-100 relative",
+                "border-r border-t border-neutral-900 border-neutral-900/50 relative",
         tileClassName
     )
 }
     />
+
           ))}
 </motion.div>
       ))}

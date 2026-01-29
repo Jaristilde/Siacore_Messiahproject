@@ -9,9 +9,9 @@
     --primary: #FF1493;
     --primary-dark: #C71585;
     --primary-light: #FF69B4;
-    --accent-nude: #FFF0F5;
-    --tile: rgba(255, 20, 147, 0.15);
-    --background: #FFFFFF;
+    --accent-nude: #1A1A1A;
+    --tile: rgba(255, 20, 147, 0.2);
+    --background: #000000;
   }
 
   html {
@@ -19,7 +19,7 @@
   }
 
   body {
-    @apply font-sans bg-white text-gray-900 overflow-x-hidden;
+    @apply font-sans bg-black text-white overflow-x-hidden;
   }
 
   h1,
@@ -33,7 +33,7 @@
 }
 
 .glass {
-  @apply bg-white/70 backdrop-blur-md border border-white/20;
+  @apply bg-black/40 backdrop-blur-xl border border-white/10;
 }
 
 .pink-gradient {
