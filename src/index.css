@@ -5,13 +5,29 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --primary: #FF1493;
+    --primary-dark: #C71585;
+    --primary-light: #FF69B4;
+    --accent-nude: #FFF0F5;
+    --tile: rgba(255, 20, 147, 0.15);
+    --background: #FFFFFF;
+  }
+
   html {
     scroll-behavior: smooth;
   }
+
   body {
     @apply font-sans bg-white text-gray-900 overflow-x-hidden;
   }
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-display font-bold;
   }
 }
